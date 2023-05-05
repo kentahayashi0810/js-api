@@ -56,8 +56,28 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+  padding: 40px 0;
 }
 .p-wikipedia__block {
-  height: 100px;
-  padding: 20px;
+  /* height: 100px; */
+  padding: 20px 20px 50px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: relative;
+}
+.p-wikipedia__block-ttl {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.p-wikipedia__block-date {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 10px;
 }

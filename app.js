@@ -52,7 +52,7 @@ const wikiFetch = async (inputValue) => {
       elemSpan2.classList.add("p-wikipedia__block-date");
       const elemDate = elem.timestamp;
       const elemDateSliced = elemDate.slice(0, 10).replace(/-/g, ".");
-      elemSpan2.textContent = elemDateSliced;
+      elemSpan2.textContent = `最終更新日: ${elemDateSliced}`;
 
       elemBlock.appendChild(elemSpan);
       elemBlock.appendChild(elemSpan2);
